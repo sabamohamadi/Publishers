@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./kamadatepicker.min.css" />
+    <script
+      src="https://kit.fontawesome.com/52e22815c5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>انتشارات</title>
+  </head>
+  <body style="background-color: white">
+    <div class="menu">
+      <div class="right">
+        <div class="logo"></div>
+        <a class="a-menu" href="./home.html">خانه</a>
+        <a class="a-menu" href="">مشاهده مقالات </a>
+      </div>
+      <div style="margin-left: 10px">
+        <a class="a-menu" href="">
+          <i
+            class="fa fa-user-o"
+            aria-hidden="true"
+            style="margin-right: 5px"
+          ></i>
+          حساب کاربری
+        </a>
+      </div>
+    </div>
+    <div class="edit">
+      <div class="edit-right">
+        <img
+          src="./1.jpg"
+          alt=""
+          style="
+            border: 1px solid black;
+            width: 75px;
+            height: 75px;
+            border-radius: 45px;
+          "
+        />
+        <span style="margin-top: 5px; font-size: 20px"
+          >نام و نام خانوادگی کاربر</span
+        >
+        <a href="" class="co">میز کار</a>
+        <a href="edit.html" class="co">ویرایش اطلاعات کاربری</a>
+        <a href="add.html" class="co" style="border: 2px solid black"
+          >افزودن فیش جدید</a
+        >
+        <a href="./neshanshode.html" class="co">فیش های نشان شده</a>
+        <a href="" class="co">خروج از حساب کاربری</a>
+      </div>
+      <div class="add-left">
+        <div class="flex-r">
+          <div>
+            <label for="m" style="text-decoration: right">:موضوع کلی</label>
+            <input list="mozo" id="m" name="" value="" class="width" />
+            <datalist id="mozo">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="name">:نام کتاب/سایت</label>
+            <input type="text" id="name" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="jeld">:جلد</label>
+            <input type="text" id="jeld" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="safe">:صفحه</label>
+            <input type="text" id="safe" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="moalef">:نام مولف</label>
+            <input type="text" id="moalef" name="" value="" class="width" />
+          </div>
+        </div>
+        <div class="flex-r" style="margin-top: 10px">
+          <div>
+            <label for="jozi">:موضوع جزئی</label>
+            <input type="text" id="jozi" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="date-nashr">:سال نشر</label>
+            <input type="text" id="date-nashr" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="nasher">:ناشر</label>
+            <input type="text" id="nasher" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="date">:تاریخ</label>
+            <input type="text" id="date" name="" value="" class="width" />
+          </div>
+          <div>
+            <label for="link">:لینک</label>
+            <input type="text" id="link" name="" value="" class="width" />
+          </div>
+        </div>
+        <div>
+          <textarea name="" id="" cols="123" rows="17"></textarea>
+        </div>
+        <div class="dok">
+          <div
+            style="
+              width: 33%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <input
+              type="submit"
+              value="افزودن فایل"
+              style="width: 250px !important"
+              class="dashboard-submit"
+            />
+          </div>
+          <div
+            style="
+              width: 33%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <input
+              type="submit"
+              value="ثبت تغییرات"
+              style="width: 250px !important"
+              class="dashboard-submit"
+            />
+          </div>
+          <div
+            style="
+              width: 33%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+          <a href="./" style="width: 250px !important"
+          class="dashboard-submit">بازگشت</a>
+          <i            ></i>
+            <!-- <input
+              type="submit"
+              value="بازگشت"
+              style="width: 250px !important"
+              class="dashboard-submit"
+              onclick="href()"
+            /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./kamadatepicker.min.js"></script>
+  <script src="./jquery.js"></script>
+  <script>
+    kamaDatepicker("date-nashr");
+  </script>
+  <script>
+    const dateInput = document.getElementById("date");
+
+    dateInput.value = formatDate();
+
+    console.log(formatDate());
+
+    function padTo2Digits(num) {
+      return num.toString().padStart(2, "0");
+    }
+
+    function formatDate(date = new Date()) {
+      return [
+        date.getFullYear(),
+        padTo2Digits(date.getMonth() + 1),
+        padTo2Digits(date.getDate()),
+      ].join("-");
+    }
+  </script>
+</html>

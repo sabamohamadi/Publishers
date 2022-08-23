@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/52e22815c5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>انتشارات</title>
+  </head>
+  <body style="background-color: white">
+    <div class="menu">
+      <div class="right">
+        <div class="logo"></div>
+        <a class="a-menu" href="./home.html">خانه</a>
+        <a class="a-menu" href="">مشاهده مقالات </a>
+       
+      </div>
+      <div style="margin-left: 10px">
+        <a class="a-menu" href="">
+          <i
+            class="fa fa-user-o"
+            aria-hidden="true"
+            style="margin-right: 5px"
+          ></i>
+          حساب کاربری
+        </a>
+      </div>
+    </div>
+    <div class="edit">
+      <div class="edit-right">
+        <img
+          src="./1.jpg"
+          alt=""
+          style="
+            border: 1px solid black;
+            width: 75px;
+            height: 75px;
+            border-radius: 45px;
+          "
+        />
+        <span style="margin-top: 5px; font-size: 20px"
+          >نام و نام خانوادگی کاربر</span
+        >
+        <a href="./dashboard.html" class="co">میز کار</a>
+        <a href="" class="co" style="border: 2px solid black"
+          >ویرایش اطلاعات کاربری</a
+        >
+        <a href="add.html" class="co">افزودن فیش جدید</a>
+        <a href="./neshanshode.html" class="co">فیش های نشان شده</a>
+        <a href="" class="co">خروج از حساب کاربری</a>
+      </div>
+      <div class="edit-left">
+        <form action="">
+          <div>
+            <label for="" class="dec">نام</label>
+            <input type="text" class="inp" style="direction: rtl;"/>
+          </div>
+          <div>
+            <label for="" class="dec">نام خانوادگی</label>
+            <input type="text" class="inp" style="direction: rtl;"/>
+          </div>
+          <div>
+            <label for="" class="dec">تلفن همراه</label>
+            <input type="text" class="inp" style="direction: rtl;"/>
+          </div>
+          <div>
+            <label for="" class="dec">ایمیل</label>
+            <input type="email" class="inp" style="direction: rtl;"/>
+          </div>
+          <div>
+            <label for="" class="dec">رمز عبور فعلی</label>
+            <input type="password" class="inp" style="direction: rtl;"/>
+          </div>
+          <div>
+            <label for="" class="dec">رمز عبور جدید</label>
+            <input type="password" class="inp" style="direction: rtl;"/>
+          </div>
+          <div>
+            <label for="" class="dec">تکرار رمز عبور جدید</label>
+            <input type="password" class="inp" style="direction: rtl;"/>
+          </div>
+          <div style="flex-direction: row-reverse !important ; align-items: center;">
+            <p style="margin-left: 10px;">:جنسیت</p>
+            <input type="radio" id="man" name="man" value="man" style="margin-left: 5px;"/>
+            <label for="man" style="margin-left: 10px;">اقا</label>
+            <input type="radio" id="woman" name="man" value="woman" style="margin-left: 5px;"/>
+            <label for="woman" style="margin-left: 10px;">خانم</label>
+            <input type="radio" id="unkown" name="man" value="unkown" style="margin-left: 5px;"/>
+            <label for="unkown" style="margin-left: 10px;">هیچکدام</label>
+          </div>
+          <input
+            type="submit"
+            value="ثبت تغییرات"
+            style="width: 200px; cursor: pointer;"
+            class="sub"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./kamadatepicker.min.css" />
+    <script
+      src="https://kit.fontawesome.com/52e22815c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>انتشارات</title>
+  </head>
+  <body style="background-color: white">
+    <div class="menu">
+      <div class="right">
+        <div class="logo"></div>
+        <a class="a-menu" href="./home.html">خانه</a>
+        <a class="a-menu" href="">مشاهده مقالات </a>
+      </div>
+      <div style="margin-left: 10px">
+        <a class="a-menu" href="">
+          <i
+            class="fa fa-user-o"
+            aria-hidden="true"
+            style="margin-right: 5px"
+          ></i>
+          حساب کاربری
+        </a>
+      </div>
+    </div>
+    <div class="edit">
+      <div class="edit-right">
+        <img
+          src="./1.jpg"
+          alt=""
+          style="
+            border: 1px solid black;
+            width: 75px;
+            height: 75px;
+            border-radius: 45px;
+          "
+        />
+        <span style="margin-top: 5px; font-size: 20px"
+          >نام و نام خانوادگی کاربر</span
+        >
+        <a href="" class="co" style="border: 2px solid black">میز کار</a>
+        <a href="edit.html" class="co">ویرایش اطلاعات کاربری</a>
+        <a href="add.html" class="co">افزودن فیش جدید</a>
+        <a href="./neshanshode.html" class="co">فیش های نشان شده</a>
+        <a href="" class="co">خروج از حساب کاربری</a>
+      </div>
+      <div class="dashboard-left">
+        <div class="left-top">
+          <div style="width: 100%">
+            <p style="width: 100%; text-align: right">جستجو</p>
+          </div>
+          <div
+            style="
+              margin-top: 10px;
+              display: flex;
+              flex-direction: row-reverse;
+              flex-wrap: wrap;
+              justify-content: space-between;
+            "
+          >
+            <div class="in">
+              <label for="m" style="text-decoration: right">
+                بر اساس موضوع</label
+              >
+
+              <select name="search"  id="m" style="width: 62%;">
+                <option value="" disabled selected>انتخاب موضوع</option>
+                <option value="eslam">اسلام</option>
+                <option value="eslam">تاریخ</option>
+                <option value="eslam">جغرافیا</option>
+                <option value="eslam">زندگینامه</option>
+                <option value="eslam">ایران</option>
+                <option value="eslam">پزشکی</option>
+                <option value="eslam">فقه و حقوق</option>
+                <option value="eslam">ریاضیات</option>
+                <option value="eslam">فیزیک</option>
+                <option value="eslam">شیمی</option>
+                <option value="eslam">ادبیات</option>
+  
+              </select>
+
+            </div>
+            <div class="in">
+              <label for="name">بر اساس نام کتاب</label>
+              <input type="text" id="name" name="" value="" style="direction: rtl;"/>
+            </div>
+            <div class="in" style="margin-top: 20px">
+              <label for="writer">بر اساس نام نویسنده</label>
+              <input type="text" id="writer" name="" value="" style="direction: rtl;" />
+            </div>
+            <div class="in" style="margin-top: 20px">
+              <label for="date">بر اساس تاریخ</label>
+              <input type="text" id="date-p" name="" value="" style="direction: rtl;"/>
+            </div>
+          </div>
+          <div class="search-dokme">
+            <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <input
+              type="submit"
+              value="جستجو در فیش های خصوصی"
+              style="margin-top: 20px"
+              class="dashboard-submit"
+            />
+          </div>
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <input
+              type="submit"
+              value="جستجو در فیش های عمومی"
+              style="margin-top: 20px"
+              class="dashboard-submit"
+            />
+          </div>
+          </div>
+          
+        </div>
+        <div class="left-bottom">
+          <div class="d-f">
+            <p>:فیش های اخیر</p>
+            <a
+              href=""
+              style="text-decoration: none; color: black; font-size: 15px"
+              >افزودن فیش جدید</a
+            >
+          </div>
+          <div class="recently">
+            <div  class="recently-d">
+              <p>فیش 6</p>
+              <a href="" class="a-dash">ویرایش</a>
+            </div>
+            <div class="recently-d">
+              <p>فیش 6</p>
+              <a href="" class="a-dash">ویرایش</a>
+            </div>
+            <div class="recently-d">
+              <p>فیش 6</p>
+              <a href="" class="a-dash">ویرایش</a>
+            </div>
+            
+            <div class="recently-d">
+              <p>فیش 6</p>
+              <a href="" class="a-dash">ویرایش</a>
+            </div>
+            
+          </div>
+          <div class="number">
+            <div>
+            <span>تعداد فیش های ثبت شده:</span>
+            <span>60</span>
+          </div>
+          <div>
+            <span>تعداد فیش های عمومی:</span>
+            <span>40</span>
+          </div>
+          <div>
+            <span>تعداد فیش های خصوصی:</span>
+            <span>20</span>
+          </div>
+            
+            
+          </div>
+          <div class="moshahede">
+            <div
+            style="
+              width: 49%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+          <a href="listkhososi.html" class="dashboard-submit" style="margin-top: 20px ; width: 250px !important;">مشاهده فیش های خصوصی</a>
+            
+          </div>
+          <div
+            style="
+              width: 49%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+          <a href="listomomi.html" class="dashboard-submit" style="margin-top: 20px ; width: 250px !important; ">مشاهده فیش های عمومی</a>
+           
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./kamadatepicker.min.js"></script>
+  <script src="./jquery.js"></script>
+  <script>
+    kamaDatepicker("date-p");
+  </script>
+</html>
